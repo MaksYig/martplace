@@ -85,7 +85,6 @@
     font-size: 15px;
     line-height: 22px;
     font-weight: 400;
-    
   }
 }
 .alarm span {
@@ -128,19 +127,17 @@
     width: 360px;
     border-radius: 23px;
     height: 47px;
-    border:1px solid  rgb(217, 223, 229);
+    border: 1px solid rgb(217, 223, 229);
     padding-left: 23px;
     padding-right: 90px;
-    &::placeholder{
+    &::placeholder {
       color: #898f96;
       font-size: 15px;
       line-height: 30px;
-      
     }
   }
-  
 }
-.search_btn{
+.search_btn {
   position: absolute;
   background-color: #0674ec;
   top: 0;
@@ -149,23 +146,9 @@
   border-radius: 23px;
   border: none;
   cursor: pointer;
-  img{
+  img {
     padding: 15px 28px;
-    
   }
-
-
 }
 
 @import "media";
-.Rounded_Rectangle_1 {
-  border-width: 1px;
-  border-color: rgb(217, 223, 229);
-  border-style: solid;
-  position: absolute;
-  left: 1170px;
-  top: 117px;
-  width: 358px;
-  height: 44px;
-  z-index: 748;
-}
