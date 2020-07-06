@@ -4,7 +4,7 @@
 a {
   text-decoration: none;
   display: inline-block;
-  color: black;
+  color: inherit;
 }
 ul,
 li {
@@ -16,32 +16,14 @@ p {
   margin: 0;
 }
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  color:#555555;
+ 
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
 }
-
-$maxWidth: 1300;
-
-@mixin adaptiv-font($pcSize, $mobSize) {
-  $addSize: $pcSize - $mobSize;
-  $maxWidth: $maxWidth - 320;
-  font-size: calc(
-    #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
-  );
-}
-h1 {
-  /* Need to enter PC size font and Mob size font */
-  @include adaptiv-font(40, 24);
-}
-/* Тень блока
-  background-color: #f9f9f9;
-  box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.18);*/
-/* Обводка текста
-  color: rgb(14, 13, 13) !important;
-  text-shadow: 1px 0 1px #fff, 0 1px 1px #fff, -1px 0 1px #fff, 0 -1px 1px #fff;*/
