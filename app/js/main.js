@@ -5,14 +5,7 @@ $(function () {
     nextArrow:
       '<button type="button" class="slick-btn slick-next"> <img src="img/icons/arrow-right.png" alt="">',
   });
-  $(".followers__product-items").slick({
-    prevArrow:
-      '<button type="button" class="slick-btn-foll slick-prev"> <img src="img/icons/arrow-left.png" alt="">',
-    nextArrow:
-      '<button type="button" class="slick-btn-foll slick-next"> <img src="img/icons/arrow-right.png" alt="">',
-    slidesToShow: 3,
-    slidesToScroll: 1,
-  });
+ 
 
   $(".weekly__product-info-rate").rateYo({
     rating: 4,
@@ -28,7 +21,7 @@ $(function () {
 
 
 
-  
+
   var mixer = mixitup(".newproducts__items");
 
 });
