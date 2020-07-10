@@ -129,6 +129,10 @@
     font-size: 15px;
     line-height: 42px;
     text-transform: uppercase;
+    &:focus {
+      border-top: 2px solid $blue;
+      color: #000;
+    }
   }
 }
 .header__search {
@@ -140,6 +144,7 @@
     border: 1px solid rgb(217, 223, 229);
     padding-left: 23px;
     padding-right: 90px;
+    outline: none;
     &::placeholder {
       color: #898f96;
       font-size: 15px;
@@ -284,6 +289,7 @@
       margin-right: 30px;
       margin-left: -5px;
       outline: none;
+      border-left: none;
 
       option {
         display: inline-block;
@@ -730,7 +736,6 @@
     }
     &-text {
       margin-top: 30px;
-      
     }
   }
 }
@@ -796,63 +801,208 @@
 }
 // end choose section
 // feedback section
-.feedback{
+.feedback {
   padding-bottom: 120px;
-  &__inner{
-display: flex;
-
+  &__inner {
+    display: flex;
   }
-  &__item{
+  &__item {
     max-width: 555px;
     border-left: 2px solid $blue;
     padding: 50px 40px 50px 40px;
     box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
     border-radius: 4px;
     margin-right: 28px;
-    
   }
-  &__header{
+  &__header {
     display: flex;
     position: relative;
-     &-icon{
+    &-icon {
       font-size: 60px;
       color: #e8e8e8;
       position: absolute;
-      top:5px;
+      top: 5px;
       right: 3px;
     }
   }
-  &__img{
+  &__img {
     margin-right: 18px;
     margin-bottom: 28px;
-    
-    img{
+
+    img {
       width: 80px;
       height: 80px;
     }
   }
-  &__info-inner{
+  &__info-inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 80px;
-    
   }
-  &__name{
+  &__name {
     font-size: 20px;
     color: #000;
     margin-bottom: 16px;
   }
-  &__position{
-      font-size: 16px;
-      display: block;
-      color: $grey;
+  &__position {
+    font-size: 16px;
+    display: block;
+    color: $grey;
   }
   &__text {
     max-width: 475px;
     line-height: 30px;
-    
   }
 }
 // end feedback section
+// start news section
+.news {
+  background-color: $bg;
+  padding-bottom: 120px;
+  &__inner {
+    display: flex;
+  }
+  &__content-inner {
+    padding: 28px 28px 0px 28px;
+  }
+  &__item {
+    max-width: 361px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    margin-right: 28px;
+    display: flex;
+    flex-direction: column;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__img {
+    
+    img {
+      width: 361px;
+      height: 230px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      
+      
+    }
+  }
+  &__title {
+    font-size: 22px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 35px;
+  }
+  &__text {
+    line-height: 30px;
+    padding-bottom: 30px;
+  }
+  &__footer {
+    display: flex;
+    margin-top: auto;
+    border-top: 1px solid #ececec;
+    align-items: center;
+    padding: 0px 28px 0px 28px;
+    height: 60px;
+    
+    &-right{
+      
+      display: flex;
+      
+    }
+  }
+  &__date {
+    font-size: 15px;
+    line-height: 30px;
+    color: #999999;
+    position: relative;
+    padding-right: 48px;
+
+    &::after{
+      content: "";
+      position: absolute;
+      background-color:#ececec;
+      width: 1px;
+      height: 42px;
+      top:-7px;
+      right: 0;
+      
+    }
+    span {
+      margin-right: 5px;
+      font-size: 15px;
+      color: $blue;
+    }
+    
+  }
+  &__comment {
+    font-size: 15px;
+    line-height: 30px;
+    color: #999999;
+    margin-left: 30px;
+    
+    span {
+      margin-right: 5px;
+      font-size: 15px;
+    }
+  }
+  &__sees {
+    font-size: 15px;
+    line-height: 30px;
+    color: #999999;
+    margin-left: 30px;
+    span {
+      margin-right: 6px;
+      font-size: 15px;
+    }
+  }
+}
+// end news section
+// start support section
+.support{
+  &__inner{
+    display: flex;
+    
+    
+  }
+  &__item{
+    position: relative;
+    border-right: 1px solid #e8eaf3 ;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 130px;
+    padding-left: 83px;
+    &:last-child{
+      border-right:none;
+      padding-left:130px;
+      padding-right: 0;
+    }
+
+  }
+  &__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    img{
+
+    }
+  }
+  &__text{
+    font-size: 24px;
+    color:#000;
+
+
+  }
+  &__text-span1{
+    color: $blue;
+  }
+  &__text-span2{
+    color: #7347c1;
+  }
+}
+
+// end support section
 @import "media";
