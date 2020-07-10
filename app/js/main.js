@@ -5,7 +5,6 @@ $(function () {
     nextArrow:
       '<button type="button" class="slick-btn slick-next"> <img src="img/icons/arrow-right.png" alt="">',
   });
- 
 
   $(".weekly__product-info-rate").rateYo({
     rating: 4,
@@ -18,10 +17,5 @@ $(function () {
     starWidth: "12px",
   });
 
-
-
-
-
   var mixer = mixitup(".newproducts__items");
-
 });
