@@ -25,7 +25,10 @@ $(function () {
     starWidth: "12px",
   });
 
-  var mixer = mixitup(".newproducts__items");
 
+
+
+  
+  var mixer = mixitup(".newproducts__items");
 
 });
