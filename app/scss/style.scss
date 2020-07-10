@@ -90,7 +90,7 @@
     color: #333333;
   }
   &__info-user-money {
-    color: #0674ec;
+    color: $blue;
     font-size: 15px;
     line-height: 22px;
     font-weight: 400;
@@ -107,7 +107,7 @@
   left: 19px;
 }
 .num__cart {
-  background-color: #0674ec;
+  background-color: $blue;
   top: -12px;
   left: 22px;
 }
@@ -149,7 +149,7 @@
 }
 .search_btn {
   position: absolute;
-  background-color: #0674ec;
+  background-color: $blue;
   top: 0;
   right: 0;
   height: 47px;
@@ -305,7 +305,8 @@
     }
   }
 }
-
+/* end Header content section */
+/* start info section */
 .info__inner {
 }
 .info__items {
@@ -347,6 +348,8 @@
     text-align: center;
   }
 }
+/* end info section */
+/* start weekly section */
 .weekly {
   background-color: #eff1f5;
   padding-bottom: 120px;
@@ -512,7 +515,7 @@
       color: #555555;
       display: inline-flex;
       align-items: center;
-      color: #0674ec;
+      color: $blue;
       span {
         margin-right: 10px;
         font-size: 15px;
@@ -522,7 +525,8 @@
   &-info-rate {
   }
 }
-
+/* end weekly section */
+/* start newproducts section */
 .newproducts {
   background-color: #f6f7fb;
   padding-bottom: 120px;
@@ -555,7 +559,7 @@
       margin-right: 10px;
       outline: none;
       &:focus {
-        background-color: #0674ec;
+        background-color: $blue;
         color: #fff;
       }
     }
@@ -584,7 +588,7 @@
     margin-right: 0;
   }
 }
-.newproducts-total__btn {
+.main__btn {
   display: flex;
   justify-content: center;
 
@@ -592,7 +596,7 @@
     text-align: center;
     color: #fff;
     padding: 20px 35px;
-    background-color: #0674ec;
+    background-color: $blue;
     border: none;
     outline: none;
     border-radius: 27.5px;
@@ -665,6 +669,8 @@
     }
   }
 }
+/* end newproducts section */
+/* start martplace section */
 
 .martplace {
   padding-bottom: 120px;
@@ -700,7 +706,7 @@
       font-size: 60px;
       margin-bottom: 50px;
       .lnr-license {
-        color: #0674ec;
+        color: $blue;
       }
       .lnr-magic-wand {
         color: #7f4ec2;
@@ -724,9 +730,129 @@
     }
     &-text {
       margin-top: 30px;
-      font-size: 16px;
-      color: #555555;
+      
     }
   }
 }
+/* end martplace section */
+// start choose section
+
+.choose {
+  &__inner {
+    display: flex;
+    justify-content: center;
+  }
+  &__item-wrapper {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 190px;
+  }
+  &__item1-wrapper {
+    background-color: $blue;
+    background-image: url(../img/content/sell-bg.png);
+  }
+  &__item2-wrapper {
+    background-color: #7347c1;
+    background-image: url(../img/content/buy-bg.png);
+  }
+  &__item {
+    max-width: 100%;
+    text-align: center;
+
+    &-img {
+      margin-bottom: 50px;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 120px;
+        height: 100px;
+        display: block;
+      }
+    }
+    &-title {
+      color: #fff;
+      font-size: 36px;
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
+    &-text {
+      font-size: 16px;
+      line-height: 30px;
+      color: #fff;
+      margin-bottom: 50px;
+    }
+    &-btn {
+      font-size: 16px;
+      color: $blue;
+      background-color: #fff;
+      padding: 20px 25px;
+      border-radius: 27.5px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}
+// end choose section
+// feedback section
+.feedback{
+  padding-bottom: 120px;
+  &__inner{
+display: flex;
+
+  }
+  &__item{
+    max-width: 555px;
+    border-left: 2px solid $blue;
+    padding: 50px 40px 50px 40px;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    margin-right: 28px;
+    
+  }
+  &__header{
+    display: flex;
+    position: relative;
+     &-icon{
+      font-size: 60px;
+      color: #e8e8e8;
+      position: absolute;
+      top:5px;
+      right: 3px;
+    }
+  }
+  &__img{
+    margin-right: 18px;
+    margin-bottom: 28px;
+    
+    img{
+      width: 80px;
+      height: 80px;
+    }
+  }
+  &__info-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80px;
+    
+  }
+  &__name{
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 16px;
+  }
+  &__position{
+      font-size: 16px;
+      display: block;
+      color: $grey;
+  }
+  &__text {
+    max-width: 475px;
+    line-height: 30px;
+    
+  }
+}
+// end feedback section
 @import "media";

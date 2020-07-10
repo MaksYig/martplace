@@ -26,5 +26,6 @@ $(function () {
   });
 
   var mixer = mixitup(".newproducts__items");
- 
+
+
 });
