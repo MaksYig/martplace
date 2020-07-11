@@ -1,6 +1,16 @@
 * {
   box-sizing: border-box;
 }
+// sticky footer start
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.site-content {
+  flex: 1;
+}
+// sticky footer end
 a {
   text-decoration: none;
   display: inline-block;
@@ -15,6 +25,8 @@ li {
 p {
   margin: 0;
 }
+
+
 body {
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
