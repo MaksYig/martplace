@@ -144,9 +144,9 @@ body {
   li {
     display: inline-block;
     position: relative;
-      padding-right: 17px;
-     margin-right: 7px;
-     &::before {
+    padding-right: 17px;
+    margin-right: 7px;
+    &::before {
       content: "/";
       position: absolute;
       top: 0;
@@ -158,7 +158,6 @@ body {
       &:focus {
         color: #fff;
       }
-      
     }
   }
 }
@@ -347,17 +346,29 @@ body {
     border-top-right-radius: 4px;
     transition: all 0.3s;
     position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // width: 360px;
+    // height: 230px;
+    
+    
     img {
       width: 360px;
       height: 230px;
       display: block;
     }
     &:hover {
+      img{
+        opacity: 0;
+      }
       .product__btn {
         opacity: 1;
       }
     }
   }
+
+  
   &__btn {
     opacity: 0;
     position: absolute;
@@ -443,7 +454,7 @@ body {
   }
   &__desc {
     padding-left: 30px;
-    padding-right: 10px;
+    padding-right: 30px;
     font-size: 16px;
     line-height: 30px;
     padding-bottom: 10px;

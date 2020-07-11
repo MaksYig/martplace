@@ -41,6 +41,10 @@
     margin-right: 50px;
     cursor: pointer;
     outline: none;
+    &:hover{
+      color: $blue;
+      background-color: #fff;
+    }
   }
   &__item {
     margin-right: 35px;
@@ -162,6 +166,8 @@
   border: none;
   cursor: pointer;
   outline: none;
+  
+  
   img {
     padding: 15px 28px;
   }
@@ -234,6 +240,10 @@
     text-align: center;
     display: inline-block;
     outline: none;
+    &:hover{
+      color: $blue;
+      background-color: #fff;
+    }
   }
   &-search {
     position: absolute;
@@ -316,6 +326,7 @@
       text-align: center;
       cursor: pointer;
       outline: none;
+      
     }
   }
 }
@@ -428,6 +439,12 @@
     width: 555px;
     height: 450px;
     margin-right: 50px;
+    &:hover{
+      background-image: -moz-linear-gradient( 180deg, rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%);
+      background-image: -webkit-linear-gradient( 180deg, rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%);
+      background-image: -ms-linear-gradient( 180deg, rgb(6,116,236) 0%, rgb(61,94,215) 46%, rgb(115,71,193) 100%);
+      opacity: 0.902;
+    }
     img {
       display: block;
     }
@@ -563,7 +580,7 @@
     margin-bottom: 50px;
     button {
       font-size: 15px;
-      line-height: 20px;
+      line-height: 10px;
       font-weight: 400;
       cursor: pointer;
       background-color: #f1f3f6;
@@ -583,7 +600,7 @@
 }
 .section__filter {
   position: absolute;
-  top: 60px;
+  top: 47px;
   right: 60px;
   &::after {
     content: "";
@@ -607,6 +624,7 @@
 .main__btn {
   display: flex;
   justify-content: center;
+  
 
   button {
     text-align: center;
@@ -618,8 +636,10 @@
     border-radius: 27.5px;
     margin-top: 57px;
     cursor: pointer;
+    
   }
 }
+
 // start followers
 .followers {
   background-color: #eff1f5;
@@ -810,6 +830,10 @@
       border: none;
       outline: none;
       cursor: pointer;
+      &:hover{
+        color: #fff;
+        background-color: $blue;
+      }
     }
   }
 }
@@ -1029,6 +1053,10 @@
       background-color: #fff;
       color: $blue;
       font-size: 16px;
+      &:hover{
+        color: #fff;
+        background-color: $blue;
+      }
     }
   }
 }
