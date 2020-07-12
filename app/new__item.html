@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body class="site">
-    <main class="site-content">
+    <main class="site-content page__content">
       <header class="header">
         <div class="header__top">
           <div class="container">
@@ -92,12 +92,43 @@
             <input class="header__main-search-input" type="text" placeholder="Search your products">
             <button class="header__main-search-btn" type="submit">Search</button>
           </div>
-          <ul class="header__main-search-submenu">
+          <div class="breadcrumbs__inner">
+          <ul class="breadcrumbs__list">
             <li><a href="#">Home</a></li>
             <li><a href="#">Category Page Grid</a></li>
+            <li><span>Category Page Grid</span></li>
           </ul>
         </div>
+        </div>
       </div>
+      <section class="top__filter">
+          
+            <div class="container">
+              <div class="top__filter-inner">
+            <div class="top__filter-title">
+              <a href="#">New Products</a>
+              <a href="#">Popular Products</a>
+            </div>
+            <div class="top__filer-selects">
+                <select class="top__filter-select-price">
+                  <option value="#" >Price:Low to High</option>
+                  <option value="#" >Price:High to Low</option>
+                  <option value="#" >Free</option>
+                </select>
+                <select class="top__filter-select-item" >
+                  <option value="#">12 items per page</option>
+                  <option value="#">20 items per page</option>
+                  <option value="#">40 items per page</option>
+                </select>
+            </div>
+            <div class="top__filter-product">
+              <button class="icon-th-large"></button>
+              <button class="icon-th-list"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
 
 
 

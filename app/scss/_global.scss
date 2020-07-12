@@ -139,29 +139,117 @@ body {
   outline: none;
   text-align: center;
 }
-
-.header__main-search-submenu {
+.breadcrumbs__inner {
+  padding: 35px 0 28px;
+}
+.breadcrumbs__list {
   li {
     display: inline-block;
     position: relative;
-    padding-right: 17px;
-    margin-right: 7px;
-    &::before {
-      content: "/";
-      position: absolute;
-      top: 0;
-      right: 0;
-      color: #bfcad7;
+    & + li {
+      padding-left: 24px;
+      &::before {
+        content: "/";
+        position: absolute;
+        left: 8px;
+        color: #bfcad7;
+      }
     }
     a {
-      color: #bfcad7;
-      &:focus {
-        color: #fff;
+      color: #fff;
+    }
+    &:last-child {
+      a,
+      span {
+        color: #bfcad7;
       }
     }
   }
 }
 // End Header search section
+// Start top filter section
+.top__filter {
+  &-inner {
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-title {
+    a {
+      font-size: 16px;
+      line-height: 32px;
+      color: $grey;
+      margin-right: 40px;
+      &:hover,
+      &:focus {
+        color: $blue;
+      }
+    }
+  }
+  &-selects {
+    display: flex;
+    margin-right: 30px;
+  }
+  &-select-price {
+    width: 220px;
+    height: 44px;
+    appearance: none;
+    position: relative;
+    background-image: url(../img/icons/down.svg);
+    background-repeat: no-repeat;
+    background-position: right 20px top 50%;
+    background-size: 13px;
+    padding-left: 15px;
+    border: 1px solid rgb(236, 239, 242);
+    outline: none;
+    margin-right: 30px;
+    border-radius: 3px;
+
+  }
+  &-select-item{
+    width: 220px;
+    height: 44px;
+    appearance: none;
+    position: relative;
+    background-image: url(../img/icons/down.svg);
+    background-repeat: no-repeat;
+    background-position: right 20px top 50%;
+    background-size: 13px;
+    padding-left: 15px;
+    border: 1px solid rgb(236, 239, 242);
+    outline: none;
+    border-radius: 3px;
+  }
+  &-product {
+    width: 96px;
+    height: 44px;
+    border: 1px solid rgb(236, 239, 242);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 3px;
+    .icon-th-large {
+      font-size: 20px;
+      background:#fff;
+      border: none;
+      cursor: pointer;
+      color: #747b86;
+      outline: none;
+     
+    }
+    .icon-th-list {
+      font-size: 20px;
+      background:#fff;
+      border: none;
+      cursor: pointer;
+      color: #747b86;
+      outline: none;
+    }
+  }
+}
+
+
+// End top filter section
 // Alarm notification-header menu
 .wrapper {
   position: relative;
@@ -351,15 +439,14 @@ body {
     background-repeat: no-repeat;
     // width: 360px;
     // height: 230px;
-    
-    
+
     img {
       width: 360px;
       height: 230px;
       display: block;
     }
     &:hover {
-      img{
+      img {
         opacity: 0;
       }
       .product__btn {
@@ -368,7 +455,6 @@ body {
     }
   }
 
-  
   &__btn {
     opacity: 0;
     position: absolute;
