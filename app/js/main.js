@@ -17,5 +17,15 @@ $(function () {
     starWidth: "12px",
   });
 
+  $(".js-range-slider").ionRangeSlider({
+    type: "double",
+    min: 0,
+    max: 330,
+    from: 30,
+    to: 300,
+    prefix: "$",
+    min_interval: 150,
+  });
+
   var mixer = mixitup(".newproducts__items");
 });
