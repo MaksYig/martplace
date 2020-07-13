@@ -240,6 +240,10 @@ body {
       cursor: pointer;
       color: #747b86;
       outline: none;
+      &:active,
+      &:focus {
+        color: $blue;
+      }
     }
     .icon-th-list {
       font-size: 20px;
@@ -248,6 +252,10 @@ body {
       cursor: pointer;
       color: #747b86;
       outline: none;
+      &:active,
+      &:focus {
+        color: $blue;
+      }
     }
   }
 }
@@ -597,25 +605,28 @@ body {
     background-color: #e6f1fd;
     border-radius: 15px;
   }
-}
-
-.product__like {
-  font-size: 15px;
-  color: #6f7d8d;
-
-  .lnr-heart {
+  &__like {
     font-size: 15px;
-    color: #7f4ec2;
-    margin-right: 8px;
+    color: #6f7d8d;
+  
+    .lnr-heart {
+      font-size: 15px;
+      color: #7f4ec2;
+      margin-right: 8px;
+    }
+  }
+  &__cart {
+    color: #0674ec;
+    font-size: 15px;
+    .lnr-cart {
+    }
   }
 }
-.product__cart {
-  color: #0674ec;
-  font-size: 15px;
-  .lnr-cart {
-  }
-}
+
+
 // End product
+
+
 // Stat footer
 .footer {
   &__top {

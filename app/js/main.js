@@ -21,6 +21,13 @@ $(function () {
     readOnly: true,
     starWidth: "17px",
   });
+  $(".product__item-list-rate").rateYo({
+    rating: 4,
+    readOnly: true,
+    starWidth: "14px",
+  });
+
+  
 
   $(".js-range-slider").ionRangeSlider({
     type: "double",
@@ -32,5 +39,9 @@ $(function () {
     min_interval: 150,
   });
 
+  $(".icon-th-list").on("click", function () {
+    $(".product__item").addClass("list");
+  });
+  
   var mixer = mixitup(".newproducts__items");
 });
