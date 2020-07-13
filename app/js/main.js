@@ -16,6 +16,11 @@ $(function () {
     readOnly: true,
     starWidth: "12px",
   });
+  $(".product__item-rate").rateYo({
+    rating: 4,
+    readOnly: true,
+    starWidth: "17px",
+  });
 
   $(".js-range-slider").ionRangeSlider({
     type: "double",

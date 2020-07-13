@@ -1102,7 +1102,16 @@
   }
 }
 // end join section
-
+// start new product page
+.new__product {
+  &-page-inner {
+    display: flex;
+    
+  }
+}
+.asside__menu-block{
+  margin-right: 30px;
+}
 // start asside__categories
 .asside__categories {
   padding-top: 30px;
@@ -1237,5 +1246,119 @@
   cursor: pointer;
 }
 // end asside price range
-
+// product block
+.product__block {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.product__item {
+  max-width: 262px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  &:nth-child(3n+3){
+    margin-right: 0px;
+  }
+  
+  &-img {
+    margin-bottom: 20px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    transition: all 0.3s;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    img {
+      width: 262px;
+      height: 160px;
+      display: block;
+    }
+  }
+  &-title{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    line-height: 24px;
+    margin-bottom: 17px;
+  }
+    &-info-avatar {
+      display: inline-flex;
+      align-items: center;
+      padding-left: 20px;
+      font-size: 15px;
+      line-height: 30px;
+      color: #000;
+      font-weight: 500;
+      margin-bottom: 20px;
+      
+      img {
+        height: 28px;
+        width: 28px;
+        border-radius: 50%;
+        background-color: #7347c1;
+        margin-right: 10px;
+      }
+    }
+ 
+  &-desc{
+    display: flex;
+    padding-left: 18px;
+    padding-right: 20px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  &-cart{
+    color: #0674ec;
+    font-size: 15px;
+    span{
+      margin-right: 10px;
+    }
+  }
+  &-footer{
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    border-top: 1px solid #ececec;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    justify-content: space-between;
+    margin-top: auto;
+  }
+  &-price{
+    font-size: 15px;
+    font-weight: 500;
+    color: #0674ec;
+    padding: 8px 17px;
+    background-color: #e6f1fd;
+    border-radius: 15px;
+    line-height: 30px;
+    
+  }
+  &-info-type{
+    display: inline-flex;
+      align-items: center;
+      color: #7347c1;
+      font-size: 15px;
+      line-height: 30px;
+      font-weight: 500px;
+      
+      img {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #000;
+        margin-right: 10px;
+      }
+  }
+}
 @import "media";
