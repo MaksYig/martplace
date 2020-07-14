@@ -27,8 +27,6 @@ $(function () {
     starWidth: "14px",
   });
 
-  
-
   $(".js-range-slider").ionRangeSlider({
     type: "double",
     min: 0,
@@ -39,9 +37,5 @@ $(function () {
     min_interval: 150,
   });
 
-  $(".icon-th-list").on("click", function () {
-    $(".product__item").addClass("list");
-  });
-  
   var mixer = mixitup(".newproducts__items");
 });
