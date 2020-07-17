@@ -5,6 +5,15 @@ $(function () {
     nextArrow:
       '<button type="button" class="slick-btn slick-next"> <img src="img/icons/arrow-right.png" alt="">',
   });
+  $(".feedback__inner").slick({
+    prevArrow:
+      '<button type="button" class="feedback-btn feedback-prev"> <img src="img/icons/arrow-left.png" alt="">',
+    nextArrow:
+      '<button type="button" class="feedback-btn feedback-next">',
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      
+  });
 
   $(".weekly__product-info-rate").rateYo({
     rating: 4,
