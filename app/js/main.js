@@ -8,12 +8,16 @@ $(function () {
   $(".feedback__inner").slick({
     prevArrow:
       '<button type="button" class="feedback-btn feedback-prev"> <img src="img/icons/arrow-left.png" alt="">',
-    nextArrow:
-      '<button type="button" class="feedback-btn feedback-next">',
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      
+    nextArrow: '<button type="button" class="feedback-btn feedback-next">',
+    slidesToShow: 2,
+    slidesToScroll: 1,
   });
+
+  $(".header__burger").on("click", function () {
+    $(".header__burger, .menu").toggleClass("active");
+    $("body").toggleClass("lock");
+  });
+
 
   $(".weekly__product-info-rate").rateYo({
     rating: 4,
