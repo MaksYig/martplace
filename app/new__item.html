@@ -267,18 +267,24 @@
                   </div>
                 
                 </div>
+                
               </div>
                 </div>
+                
+              </div>
+              <div class="user__info-burger">
+                <span class="lnr lnr-user"></span>
               </div>
             </div>
           </div>
         </div>
 
+
         <div class="header__footer">
           <div class="container">
             <div class="header__footer-inner">
               <nav class="navigation">
-                <ul class="menu">
+                <ul class="menu ">
                   <li class="menu__list home"><a href="#">HOME </a>
                     <ul class="home__sub submenu">
                       <li><a href="#">Home One Multi User</a></li>
@@ -407,11 +413,13 @@
                     </div>
                   </li>
                 </ul>
-                
+                <div class="header__burger">
+                  <span></span>
+                </div>
               </nav>
               <div class="header__search">
                 <input type="text" placeholder="Search product here..." />
-                <button class="search_btn">
+                <button class="search_btn" type="submit">
                   <img src="img/icons/search.png" alt="" />
                 </button>
               </div>
@@ -420,7 +428,9 @@
         </div>
 
       </header>
-      <div class="header__main-search">
+
+
+      <section class="header__main-search">
         <div
           class="header__main-search-inner"
           style="background-image: url(img/content/header__search-bg.jpg);"
@@ -446,7 +456,7 @@
             </ul>
           </div>
         </div>
-      </div>
+      </section>
 
       <section class="top__filter">
         <div class="container">
@@ -469,7 +479,7 @@
             </div>
             <div class="top__filter-product">
               <button type="submit" class="icon-th-large"></button>
-              <button type="submit" class="icon-th-list"></button>
+              <button type="submit"class="icon-th-list active"></button>
             </div>
           </div>
         </div>
@@ -481,8 +491,8 @@
             <div class="asside__menu-block">
               <aside class="asside__menu">
                 <div class="asside__categories-block asside__block">
-                  <div class="asside__title">
-                    Categories
+                  <div class="asside__title category__title">
+                    Categories 
                     <span class="lnr lnr-chevron-down"></span>
                   </div>
                   <div class="asside__content">
@@ -498,8 +508,8 @@
                   </div>
                 </div>
                 <div class="asside__filter-products-block asside__block">
-                  <div class="asside__title">
-                    Filter Products
+                  <div class="asside__title filter__title">
+                   Filter Products
                     <span class="lnr lnr-chevron-down"></span>
                   </div>
                   <div class="asside__content">
@@ -515,7 +525,7 @@
                   </div>
                 </div>
                 <div class="asside__filter-products-block asside__block">
-                  <div class="asside__title">
+                  <div class="asside__title range__title">
                     Pricing Range
                     <span class="lnr lnr-chevron-down"></span>
                   </div>
@@ -536,344 +546,491 @@
               </aside>
             </div>
             <div class="product__block-inner">
-              <div class="product__block">
-                <div class="product product__item">
-                  <div class="product__item-img">
-                    <img src="img/content/product-bg.jpg" alt="" />
-                  </div>
-                  <div class="product__item-title">
-                    <a href="">Finance and Consulting Business Theme</a>
-                  </div>
+              <div class="product__block large">
+                <div class="product__items-list" >
+                  <div class="product__item-list ">
+                    <div class="product__item-list-img">
+                      <img src="img/content/product__list.png" alt="">
+                    </div>
+                    <div class="product__item-list-wrapper">
+                    <div class="product__item-list-colum1">
+                      <div class="product__item-list-title">
+                        <a href="#">Best YouTube Channels 
+                          For UI/UX Designers</a> 
+                      </div>
+                      <div class="product__item-list-avatar">
+                        <img src="#" alt="">
+                        <a href="#"> <span>TrendyDesign</span> </a>
+                      </div>
+                      <div class="product__item-list-desc">
+                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                      </div>
+                      <div class="product__item-list-type">
+                        <img src="#" alt="">
+                        <a href="#"><span>Wordpress</span></a>
+                      </div>
 
-                  <div class="product__item-info-avatar">
-                    <img src="##" alt="" />
-                    <a href="">Theme-Valley</a>
-                  </div>
-                  <div class="product__item-desc">
-                    <div class="product__item-rate"></div>
-                    <div class="product__item-cart">
-                      <span class="lnr lnr-cart"></span>67
                     </div>
-                  </div>
-                  <div class="product__item-footer">
-                    <div class="product__item-price">
-                      <span>$</span>50-<span>$</span>20
-                    </div>
-                    <div class="product__item-info-type">
-                      <img src="##" alt="" />
-                      <a href="#">Plugin</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="product product__item">
-                  <div class="product__item-img">
-                    <img src="img/content/product-bg.jpg" alt="" />
-                  </div>
-                  <div class="product__item-title">
-                    <a href="">Finance and Consulting Business Theme</a>
-                  </div>
+                    <div class="product__item-list-colum2">
+                      <div class="product__item-list-avatar">
+                        <img src="#" alt="">
+                        <a href="#"> <span>TrendyDesign</span> </a>
+                      </div>
+                      <div class="product__item-list-like">
+                        <span class="lnr lnr-heart"></span>
+                        90 Loves
+                      </div>
+                      <div class="product__item-list-comments">
+                        <span class="lnr lnr-bubble"></span>
+                        360 Comments
+                      </div>
+                      <div class="rate__item-list" >
+                        <div class="product__item-list-rate "data-rateyo-star-width="14px"data-rateyo-read-only="true"data-rateyo-rating="4"></div><span>(34)</span>
+                      </div>
+                      <div class="product__item-list-cart">
+                        <span class="lnr lnr-cart"></span>
+                        55
+                      </div>
 
-                  <div class="product__item-info-avatar">
-                    <img src="##" alt="" />
-                    <a href="">Theme-Valley</a>
-                  </div>
-                  <div class="product__item-desc">
-                    <div class="product__item-rate"></div>
-                    <div class="product__item-cart">
-                      <span class="lnr lnr-cart"></span>67
+                    </div>
+                    <div class="product__item-list-colum3">
+                      <div class="product__item-list-price">
+                        <span>$10 - $50</span>
+                      </div>
+                      <div class="product__item-list-type">
+                        <img src="#" alt="">
+                        <a href="#"><span>Wordpress</span></a>
+                      </div>
+                      <div class="product__item-list-cart">
+                        <span class="lnr lnr-cart"></span>
+                        55
+                      </div>
                     </div>
                   </div>
-                  <div class="product__item-footer">
-                    <div class="product__item-price">
-                      <span>$</span>50-<span>$</span>20
+                  </div>
+                  <div class="product__item-list ">
+                    <div class="product__item-list-img">
+                      <img src="img/content/product__list.png" alt="">
                     </div>
-                    <div class="product__item-info-type">
-                      <img src="##" alt="" />
-                      <a href="#">Plugin</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="product product__item">
-                  <div class="product__item-img">
-                    <img src="img/content/product-bg.jpg" alt="" />
-                  </div>
-                  <div class="product__item-title">
-                    <a href="">Finance and Consulting Business Theme</a>
-                  </div>
+                    <div class="product__item-list-wrapper">
+                    <div class="product__item-list-colum1">
+                      <div class="product__item-list-title">
+                        <a href="#">Best YouTube Channels 
+                          For UI/UX Designers</a> 
+                      </div>
+                      <div class="product__item-list-avatar">
+                        <img src="#" alt="">
+                        <a href="#"> <span>TrendyDesign</span> </a>
+                      </div>
+                      <div class="product__item-list-desc">
+                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                      </div>
+                      <div class="product__item-list-type">
+                        <img src="#" alt="">
+                        <a href="#"><span>Wordpress</span></a>
+                      </div>
 
-                  <div class="product__item-info-avatar">
-                    <img src="##" alt="" />
-                    <a href="">Theme-Valley</a>
-                  </div>
-                  <div class="product__item-desc">
-                    <div class="product__item-rate"></div>
-                    <div class="product__item-cart">
-                      <span class="lnr lnr-cart"></span>67
                     </div>
-                  </div>
-                  <div class="product__item-footer">
-                    <div class="product__item-price">
-                      <span>$</span>50-<span>$</span>20
-                    </div>
-                    <div class="product__item-info-type">
-                      <img src="##" alt="" />
-                      <a href="#">Plugin</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="product product__item">
-                  <div class="product__item-img">
-                    <img src="img/content/product-bg.jpg" alt="" />
-                  </div>
-                  <div class="product__item-title">
-                    <a href="">Finance and Consulting Business Theme</a>
-                  </div>
+                    <div class="product__item-list-colum2">
+                      <div class="product__item-list-avatar">
+                        <img src="#" alt="">
+                        <a href="#"> <span>TrendyDesign</span> </a>
+                      </div>
+                      <div class="product__item-list-like">
+                        <span class="lnr lnr-heart"></span>
+                        90 Loves
+                      </div>
+                      <div class="product__item-list-comments">
+                        <span class="lnr lnr-bubble"></span>
+                        360 Comments
+                      </div>
+                      <div class="rate__item-list" >
+                        <div class="product__item-list-rate "data-rateyo-star-width="14px"data-rateyo-read-only="true"data-rateyo-rating="4"></div><span>(34)</span>
+                      </div>
+                      <div class="product__item-list-cart">
+                        <span class="lnr lnr-cart"></span>
+                        55
+                      </div>
 
-                  <div class="product__item-info-avatar">
-                    <img src="##" alt="" />
-                    <a href="">Theme-Valley</a>
-                  </div>
-                  <div class="product__item-desc">
-                    <div class="product__item-rate"></div>
-                    <div class="product__item-cart">
-                      <span class="lnr lnr-cart"></span>67
+                    </div>
+                    <div class="product__item-list-colum3">
+                      <div class="product__item-list-price">
+                        <span>$10 - $50</span>
+                      </div>
+                      <div class="product__item-list-type">
+                        <img src="#" alt="">
+                        <a href="#"><span>Wordpress</span></a>
+                      </div>
+                      <div class="product__item-list-cart">
+                        <span class="lnr lnr-cart"></span>
+                        55
+                      </div>
                     </div>
                   </div>
-                  <div class="product__item-footer">
-                    <div class="product__item-price">
-                      <span>$</span>50-<span>$</span>20
+                  </div>
+                  <div class="product__item-list ">
+                    <div class="product__item-list-img">
+                      <img src="img/content/product__list.png" alt="">
                     </div>
-                    <div class="product__item-info-type">
-                      <img src="##" alt="" />
-                      <a href="#">Plugin</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="product product__item">
-                  <div class="product__item-img">
-                    <img src="img/content/product-bg.jpg" alt="" />
-                  </div>
-                  <div class="product__item-title">
-                    <a href="">Finance and Consulting Business Theme</a>
-                  </div>
+                    <div class="product__item-list-wrapper">
+                    <div class="product__item-list-colum1">
+                      <div class="product__item-list-title">
+                        <a href="#">Best YouTube Channels 
+                          For UI/UX Designers</a> 
+                      </div>
+                      <div class="product__item-list-avatar">
+                        <img src="#" alt="">
+                        <a href="#"> <span>TrendyDesign</span> </a>
+                      </div>
+                      <div class="product__item-list-desc">
+                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                      </div>
+                      <div class="product__item-list-type">
+                        <img src="#" alt="">
+                        <a href="#"><span>Wordpress</span></a>
+                      </div>
 
-                  <div class="product__item-info-avatar">
-                    <img src="##" alt="" />
-                    <a href="">Theme-Valley</a>
-                  </div>
-                  <div class="product__item-desc">
-                    <div class="product__item-rate"></div>
-                    <div class="product__item-cart">
-                      <span class="lnr lnr-cart"></span>67
                     </div>
-                  </div>
-                  <div class="product__item-footer">
-                    <div class="product__item-price">
-                      <span>$</span>50-<span>$</span>20
-                    </div>
-                    <div class="product__item-info-type">
-                      <img src="##" alt="" />
-                      <a href="#">Plugin</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="product product__item">
-                  <div class="product__item-img">
-                    <img src="img/content/product-bg.jpg" alt="" />
-                  </div>
-                  <div class="product__item-title">
-                    <a href="">Finance and Consulting Business Theme</a>
-                  </div>
+                    <div class="product__item-list-colum2">
+                      <div class="product__item-list-avatar">
+                        <img src="#" alt="">
+                        <a href="#"> <span>TrendyDesign</span> </a>
+                      </div>
+                      <div class="product__item-list-like">
+                        <span class="lnr lnr-heart"></span>
+                        90 Loves
+                      </div>
+                      <div class="product__item-list-comments">
+                        <span class="lnr lnr-bubble"></span>
+                        360 Comments
+                      </div>
+                      <div class="rate__item-list" >
+                        <div class="product__item-list-rate "data-rateyo-star-width="14px"data-rateyo-read-only="true"data-rateyo-rating="4"></div><span>(34)</span>
+                      </div>
+                      <div class="product__item-list-cart">
+                        <span class="lnr lnr-cart"></span>
+                        55
+                      </div>
 
-                  <div class="product__item-info-avatar">
-                    <img src="##" alt="" />
-                    <a href="">Theme-Valley</a>
-                  </div>
-                  <div class="product__item-desc">
-                    <div class="product__item-rate"></div>
-                    <div class="product__item-cart">
-                      <span class="lnr lnr-cart"></span>67
+                    </div>
+                    <div class="product__item-list-colum3">
+                      <div class="product__item-list-price">
+                        <span>$10 - $50</span>
+                      </div>
+                      <div class="product__item-list-type">
+                        <img src="#" alt="">
+                        <a href="#"><span>Wordpress</span></a>
+                      </div>
+                      <div class="product__item-list-cart">
+                        <span class="lnr lnr-cart"></span>
+                        55
+                      </div>
                     </div>
                   </div>
-                  <div class="product__item-footer">
-                    <div class="product__item-price">
-                      <span>$</span>50-<span>$</span>20
+                  </div>
+                  <div class="product__item-list ">
+                    <div class="product__item-list-img">
+                      <img src="img/content/product__list.png" alt="">
                     </div>
-                    <div class="product__item-info-type">
-                      <img src="##" alt="" />
-                      <a href="#">Plugin</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="product product__item">
-                  <div class="product__item-img">
-                    <img src="img/content/product-bg.jpg" alt="" />
-                  </div>
-                  <div class="product__item-title">
-                    <a href="">Finance and Consulting Business Theme</a>
-                  </div>
+                    <div class="product__item-list-wrapper">
+                    <div class="product__item-list-colum1">
+                      <div class="product__item-list-title">
+                        <a href="#">Best YouTube Channels 
+                          For UI/UX Designers</a> 
+                      </div>
+                      <div class="product__item-list-avatar">
+                        <img src="#" alt="">
+                        <a href="#"> <span>TrendyDesign</span> </a>
+                      </div>
+                      <div class="product__item-list-desc">
+                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                      </div>
+                      <div class="product__item-list-type">
+                        <img src="#" alt="">
+                        <a href="#"><span>Wordpress</span></a>
+                      </div>
 
-                  <div class="product__item-info-avatar">
-                    <img src="##" alt="" />
-                    <a href="">Theme-Valley</a>
-                  </div>
-                  <div class="product__item-desc">
-                    <div class="product__item-rate"></div>
-                    <div class="product__item-cart">
-                      <span class="lnr lnr-cart"></span>67
                     </div>
-                  </div>
-                  <div class="product__item-footer">
-                    <div class="product__item-price">
-                      <span>$</span>50-<span>$</span>20
-                    </div>
-                    <div class="product__item-info-type">
-                      <img src="##" alt="" />
-                      <a href="#">Plugin</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="product product__item">
-                  <div class="product__item-img">
-                    <img src="img/content/product-bg.jpg" alt="" />
-                  </div>
-                  <div class="product__item-title">
-                    <a href="">Finance and Consulting Business Theme</a>
-                  </div>
+                    <div class="product__item-list-colum2">
+                      <div class="product__item-list-avatar">
+                        <img src="#" alt="">
+                        <a href="#"> <span>TrendyDesign</span> </a>
+                      </div>
+                      <div class="product__item-list-like">
+                        <span class="lnr lnr-heart"></span>
+                        90 Loves
+                      </div>
+                      <div class="product__item-list-comments">
+                        <span class="lnr lnr-bubble"></span>
+                        360 Comments
+                      </div>
+                      <div class="rate__item-list" >
+                        <div class="product__item-list-rate "data-rateyo-star-width="14px"data-rateyo-read-only="true"data-rateyo-rating="4"></div><span>(34)</span>
+                      </div>
+                      <div class="product__item-list-cart">
+                        <span class="lnr lnr-cart"></span>
+                        55
+                      </div>
 
-                  <div class="product__item-info-avatar">
-                    <img src="##" alt="" />
-                    <a href="">Theme-Valley</a>
-                  </div>
-                  <div class="product__item-desc">
-                    <div class="product__item-rate"></div>
-                    <div class="product__item-cart">
-                      <span class="lnr lnr-cart"></span>67
+                    </div>
+                    <div class="product__item-list-colum3">
+                      <div class="product__item-list-price">
+                        <span>$10 - $50</span>
+                      </div>
+                      <div class="product__item-list-type">
+                        <img src="#" alt="">
+                        <a href="#"><span>Wordpress</span></a>
+                      </div>
+                      <div class="product__item-list-cart">
+                        <span class="lnr lnr-cart"></span>
+                        55
+                      </div>
                     </div>
                   </div>
-                  <div class="product__item-footer">
-                    <div class="product__item-price">
-                      <span>$</span>50-<span>$</span>20
+                  </div>
+                  <div class="product__item-list ">
+                    <div class="product__item-list-img">
+                      <img src="img/content/product__list.png" alt="">
                     </div>
-                    <div class="product__item-info-type">
-                      <img src="##" alt="" />
-                      <a href="#">Plugin</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="product product__item">
-                  <div class="product__item-img">
-                    <img src="img/content/product-bg.jpg" alt="" />
-                  </div>
-                  <div class="product__item-title">
-                    <a href="">Finance and Consulting Business Theme</a>
-                  </div>
+                    <div class="product__item-list-wrapper">
+                    <div class="product__item-list-colum1">
+                      <div class="product__item-list-title">
+                        <a href="#">Best YouTube Channels 
+                          For UI/UX Designers</a> 
+                      </div>
+                      <div class="product__item-list-avatar">
+                        <img src="#" alt="">
+                        <a href="#"> <span>TrendyDesign</span> </a>
+                      </div>
+                      <div class="product__item-list-desc">
+                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                      </div>
+                      <div class="product__item-list-type">
+                        <img src="#" alt="">
+                        <a href="#"><span>Wordpress</span></a>
+                      </div>
 
-                  <div class="product__item-info-avatar">
-                    <img src="##" alt="" />
-                    <a href="">Theme-Valley</a>
-                  </div>
-                  <div class="product__item-desc">
-                    <div class="product__item-rate"></div>
-                    <div class="product__item-cart">
-                      <span class="lnr lnr-cart"></span>67
                     </div>
-                  </div>
-                  <div class="product__item-footer">
-                    <div class="product__item-price">
-                      <span>$</span>50-<span>$</span>20
-                    </div>
-                    <div class="product__item-info-type">
-                      <img src="##" alt="" />
-                      <a href="#">Plugin</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="product product__item">
-                  <div class="product__item-img">
-                    <img src="img/content/product-bg.jpg" alt="" />
-                  </div>
-                  <div class="product__item-title">
-                    <a href="">Finance and Consulting Business Theme</a>
-                  </div>
+                    <div class="product__item-list-colum2">
+                      <div class="product__item-list-avatar">
+                        <img src="#" alt="">
+                        <a href="#"> <span>TrendyDesign</span> </a>
+                      </div>
+                      <div class="product__item-list-like">
+                        <span class="lnr lnr-heart"></span>
+                        90 Loves
+                      </div>
+                      <div class="product__item-list-comments">
+                        <span class="lnr lnr-bubble"></span>
+                        360 Comments
+                      </div>
+                      <div class="rate__item-list" >
+                        <div class="product__item-list-rate "data-rateyo-star-width="14px"data-rateyo-read-only="true"data-rateyo-rating="4"></div><span>(34)</span>
+                      </div>
+                      <div class="product__item-list-cart">
+                        <span class="lnr lnr-cart"></span>
+                        55
+                      </div>
 
-                  <div class="product__item-info-avatar">
-                    <img src="##" alt="" />
-                    <a href="">Theme-Valley</a>
-                  </div>
-                  <div class="product__item-desc">
-                    <div class="product__item-rate"></div>
-                    <div class="product__item-cart">
-                      <span class="lnr lnr-cart"></span>67
+                    </div>
+                    <div class="product__item-list-colum3">
+                      <div class="product__item-list-price">
+                        <span>$10 - $50</span>
+                      </div>
+                      <div class="product__item-list-type">
+                        <img src="#" alt="">
+                        <a href="#"><span>Wordpress</span></a>
+                      </div>
+                      <div class="product__item-list-cart">
+                        <span class="lnr lnr-cart"></span>
+                        55
+                      </div>
                     </div>
                   </div>
-                  <div class="product__item-footer">
-                    <div class="product__item-price">
-                      <span>$</span>50-<span>$</span>20
+                  </div>
+                  <div class="product__item-list ">
+                    <div class="product__item-list-img">
+                      <img src="img/content/product__list.png" alt="">
                     </div>
-                    <div class="product__item-info-type">
-                      <img src="##" alt="" />
-                      <a href="#">Plugin</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="product product__item">
-                  <div class="product__item-img">
-                    <img src="img/content/product-bg.jpg" alt="" />
-                  </div>
-                  <div class="product__item-title">
-                    <a href="">Finance and Consulting Business Theme</a>
-                  </div>
+                    <div class="product__item-list-wrapper">
+                    <div class="product__item-list-colum1">
+                      <div class="product__item-list-title">
+                        <a href="#">Best YouTube Channels 
+                          For UI/UX Designers</a> 
+                      </div>
+                      <div class="product__item-list-avatar">
+                        <img src="#" alt="">
+                        <a href="#"> <span>TrendyDesign</span> </a>
+                      </div>
+                      <div class="product__item-list-desc">
+                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                      </div>
+                      <div class="product__item-list-type">
+                        <img src="#" alt="">
+                        <a href="#"><span>Wordpress</span></a>
+                      </div>
 
-                  <div class="product__item-info-avatar">
-                    <img src="##" alt="" />
-                    <a href="">Theme-Valley</a>
-                  </div>
-                  <div class="product__item-desc">
-                    <div class="product__item-rate"></div>
-                    <div class="product__item-cart">
-                      <span class="lnr lnr-cart"></span>67
                     </div>
-                  </div>
-                  <div class="product__item-footer">
-                    <div class="product__item-price">
-                      <span>$</span>50-<span>$</span>20
-                    </div>
-                    <div class="product__item-info-type">
-                      <img src="##" alt="" />
-                      <a href="#">Plugin</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="product product__item">
-                  <div class="product__item-img">
-                    <img src="img/content/product-bg.jpg" alt="" />
-                  </div>
-                  <div class="product__item-title">
-                    <a href="">Finance and Consulting Business Theme</a>
-                  </div>
+                    <div class="product__item-list-colum2">
+                      <div class="product__item-list-avatar">
+                        <img src="#" alt="">
+                        <a href="#"> <span>TrendyDesign</span> </a>
+                      </div>
+                      <div class="product__item-list-like">
+                        <span class="lnr lnr-heart"></span>
+                        90 Loves
+                      </div>
+                      <div class="product__item-list-comments">
+                        <span class="lnr lnr-bubble"></span>
+                        360 Comments
+                      </div>
+                      <div class="rate__item-list" >
+                        <div class="product__item-list-rate "data-rateyo-star-width="14px"data-rateyo-read-only="true"data-rateyo-rating="4"></div><span>(34)</span>
+                      </div>
+                      <div class="product__item-list-cart">
+                        <span class="lnr lnr-cart"></span>
+                        55
+                      </div>
 
-                  <div class="product__item-info-avatar">
-                    <img src="##" alt="" />
-                    <a href="">Theme-Valley</a>
-                  </div>
-                  <div class="product__item-desc">
-                    <div class="product__item-rate"></div>
-                    <div class="product__item-cart">
-                      <span class="lnr lnr-cart"></span>67
+                    </div>
+                    <div class="product__item-list-colum3">
+                      <div class="product__item-list-price">
+                        <span>$10 - $50</span>
+                      </div>
+                      <div class="product__item-list-type">
+                        <img src="#" alt="">
+                        <a href="#"><span>Wordpress</span></a>
+                      </div>
+                      <div class="product__item-list-cart">
+                        <span class="lnr lnr-cart"></span>
+                        55
+                      </div>
                     </div>
                   </div>
-                  <div class="product__item-footer">
-                    <div class="product__item-price">
-                      <span>$</span>50-<span>$</span>20
+                  </div>
+                  <div class="product__item-list ">
+                    <div class="product__item-list-img">
+                      <img src="img/content/product__list.png" alt="">
                     </div>
-                    <div class="product__item-info-type">
-                      <img src="##" alt="" />
-                      <a href="#">Plugin</a>
+                    <div class="product__item-list-wrapper">
+                    <div class="product__item-list-colum1">
+                      <div class="product__item-list-title">
+                        <a href="#">Best YouTube Channels 
+                          For UI/UX Designers</a> 
+                      </div>
+                      <div class="product__item-list-avatar">
+                        <img src="#" alt="">
+                        <a href="#"> <span>TrendyDesign</span> </a>
+                      </div>
+                      <div class="product__item-list-desc">
+                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                      </div>
+                      <div class="product__item-list-type">
+                        <img src="#" alt="">
+                        <a href="#"><span>Wordpress</span></a>
+                      </div>
+
+                    </div>
+                    <div class="product__item-list-colum2">
+                      <div class="product__item-list-avatar">
+                        <img src="#" alt="">
+                        <a href="#"> <span>TrendyDesign</span> </a>
+                      </div>
+                      <div class="product__item-list-like">
+                        <span class="lnr lnr-heart"></span>
+                        90 Loves
+                      </div>
+                      <div class="product__item-list-comments">
+                        <span class="lnr lnr-bubble"></span>
+                        360 Comments
+                      </div>
+                      <div class="rate__item-list" >
+                        <div class="product__item-list-rate "data-rateyo-star-width="14px"data-rateyo-read-only="true"data-rateyo-rating="4"></div><span>(34)</span>
+                      </div>
+                      <div class="product__item-list-cart">
+                        <span class="lnr lnr-cart"></span>
+                        55
+                      </div>
+
+                    </div>
+                    <div class="product__item-list-colum3">
+                      <div class="product__item-list-price">
+                        <span>$10 - $50</span>
+                      </div>
+                      <div class="product__item-list-type">
+                        <img src="#" alt="">
+                        <a href="#"><span>Wordpress</span></a>
+                      </div>
+                      <div class="product__item-list-cart">
+                        <span class="lnr lnr-cart"></span>
+                        55
+                      </div>
                     </div>
                   </div>
+                  </div>
+                  <div class="product__item-list ">
+                    <div class="product__item-list-img">
+                      <img src="img/content/product__list.png" alt="">
+                    </div>
+                    <div class="product__item-list-wrapper">
+                    <div class="product__item-list-colum1">
+                      <div class="product__item-list-title">
+                        <a href="#">Best YouTube Channels 
+                          For UI/UX Designers</a> 
+                      </div>
+                      <div class="product__item-list-avatar">
+                        <img src="#" alt="">
+                        <a href="#"> <span>TrendyDesign</span> </a>
+                      </div>
+                      <div class="product__item-list-desc">
+                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                      </div>
+                      <div class="product__item-list-type">
+                        <img src="#" alt="">
+                        <a href="#"><span>Wordpress</span></a>
+                      </div>
+
+                    </div>
+                    <div class="product__item-list-colum2">
+                      <div class="product__item-list-avatar">
+                        <img src="#" alt="">
+                        <a href="#"> <span>TrendyDesign</span> </a>
+                      </div>
+                      <div class="product__item-list-like">
+                        <span class="lnr lnr-heart"></span>
+                        90 Loves
+                      </div>
+                      <div class="product__item-list-comments">
+                        <span class="lnr lnr-bubble"></span>
+                        360 Comments
+                      </div>
+                      <div class="rate__item-list" >
+                        <div class="product__item-list-rate "data-rateyo-star-width="14px"data-rateyo-read-only="true"data-rateyo-rating="4"></div><span>(34)</span>
+                      </div>
+                      <div class="product__item-list-cart">
+                        <span class="lnr lnr-cart"></span>
+                        55
+                      </div>
+
+                    </div>
+                    <div class="product__item-list-colum3">
+                      <div class="product__item-list-price">
+                        <span>$10 - $50</span>
+                      </div>
+                      <div class="product__item-list-type">
+                        <img src="#" alt="">
+                        <a href="#"><span>Wordpress</span></a>
+                      </div>
+                      <div class="product__item-list-cart">
+                        <span class="lnr lnr-cart"></span>
+                        55
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  
                 </div>
-              </div>
+                  
               <div class="pagination">
                 <ul class="pagiantion__list">
                   <li>
@@ -890,10 +1047,11 @@
                 </ul>
               </div>
             </div>
-          </div>
+          
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="footer__top">
         <div class="container">
@@ -1007,6 +1165,7 @@
         </div>
       </div>
     </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>

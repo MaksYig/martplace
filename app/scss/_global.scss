@@ -240,10 +240,10 @@ body {
       cursor: pointer;
       color: #747b86;
       outline: none;
-      &:active,
-      &:focus {
+      &.active{
         color: $blue;
       }
+     
     }
     .icon-th-list {
       font-size: 20px;
@@ -252,10 +252,10 @@ body {
       cursor: pointer;
       color: #747b86;
       outline: none;
-      &:active,
-      &:focus {
+      &.active{
         color: $blue;
       }
+      
     }
   }
 }
@@ -267,7 +267,7 @@ body {
   border-radius: 4px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
-  max-width: 263px;
+  width: 263px;
   height: 100%;
   padding: 30px 30px 35px 30px;
   margin-bottom: 30px;
@@ -279,8 +279,9 @@ body {
   font-size: 20px;
   color: #010101;
   padding-bottom: 25px;
+  cursor: pointer;
   border-bottom: 1px solid rgb(236, 239, 242);
-  span {
+   span {
     font-size: 12px;
     color: #555555;
     cursor: pointer;
@@ -709,6 +710,7 @@ body {
 // End footer
 // start pagination
 .pagination {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   margin-bottom: 120px;

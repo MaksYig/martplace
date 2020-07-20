@@ -3,7 +3,6 @@
 @import "fonts";
 @import "global";
 
-
 .header {
   &__top {
     background-color: #eef1f3;
@@ -24,7 +23,6 @@
   &__info {
     display: flex;
     align-items: center;
-   
 
     &-inner {
       display: flex;
@@ -98,7 +96,7 @@
     font-weight: 400;
   }
 }
-.user__info-burger{
+.user__info-burger {
   display: none;
 }
 .num {
@@ -630,7 +628,7 @@
   box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
   z-index: 2;
   padding: 35px 20px 35px 20px;
-  top: 80px;
+  top: 180px;
   border-top: 1px solid $blue;
   li {
     padding-left: 10px;
@@ -660,7 +658,7 @@
     box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
     z-index: 2;
     padding: 20px 20px 35px 20px;
-    top: 80px;
+    top: 180px;
     left: 0;
     border-top: 1px solid $blue;
   }
@@ -1866,10 +1864,16 @@
     font-size: 15px;
     line-height: 36px;
     color: $grey;
+    &:hover{
+      color:$blue;
+    }
   }
   span {
     color: #747b86;
   }
+}
+.asside__categories.close{
+  display: none;
 }
 // end asside__categories
 // start asside filter products block
@@ -1894,11 +1898,18 @@
     font-size: 15px;
     line-height: 36px;
     color: $grey;
+    &:hover{
+      color:$blue;
+    }
   }
   span {
     color: #747b86;
   }
 }
+.asside__filter-products.close {
+  display: none;
+}
+
 
 // end asside filter products block
 
@@ -1977,6 +1988,10 @@
   margin-top: 82px;
   cursor: pointer;
 }
+
+.price-range__content.close{
+  display: none;
+}
 // end asside price range
 // product block
 .product__block {
@@ -1995,6 +2010,7 @@
   box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
   display: flex;
   height: 210px;
+  transition: all 0.4s;
 }
 .product__item-list-img {
   width: 230px;
@@ -2127,116 +2143,126 @@
     margin-right: 10px;
   }
 }
-//End Product Item-list
+// End Product Item-list
 
-.product__item {
-  max-width: 262px;
-  width: 100%;
-  border-radius: 4px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
-  display: flex;
-  flex-direction: column;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  transition: all 0.5s;
-  &:nth-child(3n + 3) {
-    margin-right: 0px;
-  }
-
-  &-img {
-    margin-bottom: 20px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    transition: all 0.3s;
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    img {
-      width: 262px;
-      height: 160px;
-      display: block;
-    }
-  }
-  &-title {
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #000;
-    line-height: 24px;
-    margin-bottom: 17px;
-  }
-  &-info-avatar {
-    display: inline-flex;
-    align-items: center;
-    padding-left: 20px;
-    font-size: 15px;
-    line-height: 30px;
-    color: #000;
-    font-weight: 500;
-    margin-bottom: 20px;
-
-    img {
-      height: 28px;
-      width: 28px;
-      border-radius: 50%;
-      background-color: #7347c1;
-      margin-right: 10px;
-    }
-  }
-
-  &-desc {
-    display: flex;
-    padding-left: 18px;
-    padding-right: 20px;
-    justify-content: space-between;
-    margin-bottom: 15px;
-  }
-  &-cart {
-    color: #0674ec;
-    font-size: 15px;
-    span {
-      margin-right: 10px;
-    }
-  }
-  &-footer {
-    display: flex;
-    padding-left: 20px;
-    align-items: center;
-    border-top: 1px solid #ececec;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 20px;
-    justify-content: space-between;
-    margin-top: auto;
-  }
-  &-price {
-    font-size: 15px;
-    font-weight: 500;
-    color: #0674ec;
-    padding: 8px 17px;
-    background-color: #e6f1fd;
-    border-radius: 15px;
-    line-height: 30px;
-  }
-  &-info-type {
-    display: inline-flex;
-    align-items: center;
-    color: #7347c1;
-    font-size: 15px;
-    line-height: 30px;
-    font-weight: 500px;
-
-    img {
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background-color: #000;
-      margin-right: 10px;
+// Start product item list transforme
+.product__items-list {
+  .product__item-list-colum1 {
+    .product__item-list-avatar {
+      display: none;
     }
   }
 }
+.product__items-list {
+  .product__item-list-colum2 {
+    .product__item-list-cart {
+      display: none;
+    }
+  }
+}
+.product__items-list {
+  .product__item-list-colum3 {
+    .product__item-list-type {
+      display: none;
+    }
+  }
+}
+
+.product__items-list.large {
+  display: flex;
+  flex-wrap: wrap;
+
+  .product__item-list {
+    max-width: 262px;
+    flex-direction: column;
+    margin-right: 30px;
+    height: auto;
+    transition: all 0.4s;
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+
+    &-img {
+      margin: 0;
+      width: 262px;
+      height: 160px;
+      img {
+        width: 262px;
+        height: 160px;
+      }
+    }
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 0;
+    }
+    &-colum1 {
+      border-right: 0;
+      &-title {
+        margin-bottom: 17px;
+      }
+      .product__item-list-avatar {
+        display: inline-flex;
+        margin-bottom: 20px;
+      }
+      .product__item-list-type {
+        display: none;
+      }
+    }
+    &-desc {
+      display: none;
+    }
+    &-colum2 {
+      border-right: 0;
+      padding: 0;
+      padding-bottom: 15px;
+      display: flex;
+      justify-content: space-between;
+      max-width: 260px;
+      padding-left: 20px;
+      padding-right: 20px;
+      align-items: center;
+      border-bottom: 1px solid #ececec;
+      .product__item-list-avatar {
+        display: none;
+      }
+      .rate__item-list {
+        span {
+          display: none;
+        }
+      }
+      .product__item-list-cart {
+        display: inline-flex;
+        align-items: center;
+      }
+    }
+    &-like {
+      display: none;
+    }
+    &-comments {
+      display: none;
+    }
+    &-colum3 {
+      min-width: 260px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      .product__item-list-price {
+        margin-bottom: 0;
+      }
+      .product__item-list-cart {
+        display: none;
+      }
+      .product__item-list-type {
+        display: inline-flex;
+      }
+    }
+  }
+}
+// Start product item list transforme
 
 @import "media";
