@@ -40,6 +40,18 @@ $(function () {
     $("body").toggleClass("lock");
   });
 
+  $('.single__checkmark').on('click',function(){
+    $('.single__license').addClass('active');
+    $('.multi__license').removeClass('active');
+  });
+  $('.multi__checkmark').on('click',function(){
+    $('.multi__license').addClass('active');
+    $('.single__license').removeClass('active');
+  });
+
+
+
+
   $(".weekly__product-info-rate").rateYo({
     rating: 4,
     readOnly: true,

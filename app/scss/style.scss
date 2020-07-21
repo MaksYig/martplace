@@ -1864,15 +1864,15 @@
     font-size: 15px;
     line-height: 36px;
     color: $grey;
-    &:hover{
-      color:$blue;
+    &:hover {
+      color: $blue;
     }
   }
   span {
     color: #747b86;
   }
 }
-.asside__categories.close{
+.asside__categories.close {
   display: none;
 }
 // end asside__categories
@@ -1898,8 +1898,8 @@
     font-size: 15px;
     line-height: 36px;
     color: $grey;
-    &:hover{
-      color:$blue;
+    &:hover {
+      color: $blue;
     }
   }
   span {
@@ -1909,7 +1909,6 @@
 .asside__filter-products.close {
   display: none;
 }
-
 
 // end asside filter products block
 
@@ -1989,7 +1988,7 @@
   cursor: pointer;
 }
 
-.price-range__content.close{
+.price-range__content.close {
   display: none;
 }
 // end asside price range
@@ -2264,5 +2263,175 @@
   }
 }
 // Start product item list transforme
+// Start Single page
+.header__main-search-inner-single {
+  display: block;
+  padding-top: 55px;
+  padding-bottom: 60px;
+  .header__main-search-title {
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .breadcrumbs__inner {
+    padding: 0;
+  }
+}
+.single__page {
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+  }
+  &-box {
+  }
+  .asside__right {
+    &-purchase {
+      width: 360px;
+      border-radius: 4px;
+      background-color: #fff;
+      box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+      margin-bottom: 30px;
+
+      &-price {
+        background-color: $blue;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 30px;
+        color: #fff;
+        text-align: center;
+        padding: 40px 0;
+        border-top-left-radius:4px;
+        border-top-right-radius:4px;
+      }
+      &-license {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        border-bottom: 1px solid #ececec;
+
+        label {
+          display: inline-block;
+          position: relative;
+          input {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+          }
+          .checkmark {
+            position: absolute;
+            top: -16px;
+            left: 0px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: solid 4px #e6e9ed;
+            cursor: pointer;
+          }
+        }
+        &-title {
+          display: inline-block;
+          font-size: 18px;
+          line-height: 30px;
+          font-weight: 500;
+          margin-left: 34px;
+        }
+        &-text {
+          display: none;
+          padding-left: 39px;
+          font-size: 16px;
+          line-height: 30px;
+          color: #555555;
+        }
+      }
+      &-btn {
+        width: 100%;
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+
+        .purchase {
+          background-color: $blue;
+          color: #fff;
+          cursor: pointer;
+          outline: none;
+          border: none;
+          text-align: center;
+          font-size: 16px;
+          font-weight: 500;
+          border-radius: 27.5px;
+          padding: 19px 0px;
+          margin-bottom: 30px;
+        }
+        .cart {
+          cursor: pointer;
+          outline: none;
+          border: none;
+          text-align: center;
+          border-radius: 27.5px;
+          padding: 19px 0px;
+          background-color: #7347c1;
+          margin-bottom: 40px;
+          span {
+            padding-left: 32px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            position: relative;
+
+            &:before {
+              content: "\e82e";
+              position: absolute;
+              font-family: "Linearicons-Free";
+              font-size: 16px;
+              color: #fff;
+              left: 0;
+              top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.asside__right-purchase-license.multi__license {
+  border-bottom: 0px;
+  margin-bottom: 40px;
+}
+.single__license.active,
+.multi__license.active {
+  .asside__right-purchase-license-text {
+    display: block;
+  }
+  .checkmark.single__checkmark,
+  .checkmark.multi__checkmark {
+    position: absolute;
+    top: -16px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $blue;
+    border: none;
+    cursor: pointer;
+    &:after {
+      content: "";
+      position: absolute;
+      // display: none;
+      left: 7px;
+      top: 4px;
+      width: 4px;
+      height: 8px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+
+// End Single page
 
 @import "media";

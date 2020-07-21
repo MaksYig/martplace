@@ -47,6 +47,9 @@ body {
   margin: 0 auto;
   // padding: 0 15px;
 }
+.page__bg{
+  background-color: #eff1f5;
+}
 .title {
   padding-top: 120px;
   &__inner {
@@ -86,7 +89,12 @@ body {
 }
 // Header search section
 .header__main-search {
+  width:100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 .header__main-search-inner {
   padding-top: 85px;
   padding-bottom: 30px;
@@ -98,6 +106,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .header__main-search-title {
   text-align: center;
   font-size: 26px;
