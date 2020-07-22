@@ -72,6 +72,12 @@ $(function () {
     // readOnly: true,
     // starWidth: "14px",
   });
+  $(".asside__right-info-rate").rateYo({
+    // rating: 4,
+    // readOnly: true,
+    // starWidth: "14px",
+  });
+
 
   $(".js-range-slider").ionRangeSlider({
     type: "double",
@@ -82,6 +88,15 @@ $(function () {
     prefix: "$",
     min_interval: 150,
   });
+
+  $('.single__page-tab-inner .tab').on('click', function(event) {
+    var id = $(this).attr('data-id');
+      $('.single__page-tab-inner').find('.tab-item').removeClass('active-tab').hide();
+      $('.single__page-tab-inner .tabs').find('.tab').removeClass('active');
+      $(this).addClass('active');
+      $('#'+id).addClass('active-tab').fadeIn();
+      return false;
+    });
 
   var mixer = mixitup(".newproducts__items");
 });
